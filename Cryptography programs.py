@@ -2,8 +2,6 @@
 # coding: utf-8
 
 # In[3]:
-
-
 def caesar_cipher(text, shift, mode):
    result = []
    
