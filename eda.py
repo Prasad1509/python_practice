@@ -12,8 +12,6 @@ plt.plot(x,y)
 
 
 # In[13]:
-
-
 import pandas as pd
 print(pd.__version__)
 
