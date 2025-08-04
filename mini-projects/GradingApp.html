@@ -1,1 +1,131 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Interactive Grading App</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #6b73ff 0%, #000dff 100%);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      margin-bottom: 30px;
+      text-shadow: 1px 1px 4px #000;
+    }
+    input {
+      padding: 12px 15px;
+      margin: 10px 0;
+      border-radius: 8px;
+      border: none;
+      width: 250px;
+      font-size: 16px;
+      transition: box-shadow 0.3s ease;
+    }
+    input:focus {
+      outline: none;
+      box-shadow: 0 0 10px #ffd700;
+    }
+    button {
+      padding: 12px 25px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      background: #ffd700;
+      color: #000dff;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+      margin-top: 15px;
+      box-shadow: 0 5px 10px rgba(255, 215, 0, 0.4);
+    }
+    button:hover {
+      background: #ffea00;
+      transform: scale(1.05);
+    }
+    button:active {
+      transform: scale(0.95);
+    }
+    #result {
+      margin-top: 25px;
+      font-size: 20px;
+      font-weight: 700;
+      background: rgba(255, 255, 255, 0.15);
+      padding: 15px 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px #ffd700;
+      min-width: 300px;
+      opacity: 0;
+      animation: fadeIn 0.7s forwards;
+    }
+    #error {
+      margin-top: 15px;
+      color: #ff6b6b;
+      font-weight: bold;
+      min-height: 22px;
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Interactive Grading App</h1>
+
+  <input type="text" id="name" placeholder="Enter Student Name" />
+  <input type="number" id="marks" placeholder="Enter Marks (0-100)" min="0" max="100" />
+
+  <button onclick="showGrade()">Get Grade</button>
+
+  <div id="result"></div>
+  <div id="error"></div>
+
+  <script>
+    function showGrade() {
+      var name = document.getElementById('name').value.trim();
+      var marks = Number(document.getElementById('marks').value);
+
+      var resultDiv = document.getElementById('result');
+      var errorDiv = document.getElementById('error');
+
+      // Clear messages
+      resultDiv.innerText = "";
+      errorDiv.innerText = "";
+
+      if (name === "") {
+        errorDiv.innerText = "Please enter the student name.";
+        return;
+      }
+
+      if (isNaN(marks) || marks < 0 || marks > 100) {
+        errorDiv.innerText = "Please enter valid marks between 0 and 100.";
+        return;
+      }
+
+      var grade = "";
+	if (marks >= 95) grade = "O";
+      else if (marks >= 90) grade = "A+";
+      else if (marks >= 80) grade = "A";
+      else if (marks >= 70) grade = "B+";
+      else if (marks >= 60) grade = "B";
+      else if (marks >= 50) grade = "C";
+      else if (marks >= 35) grade = "Pass";
+      else grade = "Fail";
+
+      resultDiv.innerText = name + ", your grade is: " + grade;
+    }
+  </script>
+
+</body>
+</html>
+
