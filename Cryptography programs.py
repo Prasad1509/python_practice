@@ -110,6 +110,7 @@ encrypted_text = transposition(transposition(text, key1), key2)
 print("Encrypted text:", encrypted_text)
 
 
+
 # In[ ]:
 
 
