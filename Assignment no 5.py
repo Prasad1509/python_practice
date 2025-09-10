@@ -32,7 +32,6 @@ def power(a,b):
 
 # In[1]:
 
-
 def power(a,b):
     if b!=0:
         return a * power(a,b-1)
