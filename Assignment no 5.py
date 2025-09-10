@@ -5,7 +5,6 @@
 
 print("hallo world")
 
-
 # In[1]:
 
 def power(a,b):
