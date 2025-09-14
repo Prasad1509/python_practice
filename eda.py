@@ -3,7 +3,6 @@
 
 # In[29]:
 
-
 from matplotlib import pyplot as plt
 x=[4,8,9]
 y=[10,12,15]
