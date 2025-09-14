@@ -22,7 +22,6 @@ print(pd.__version__)
 import seaborn as sns
 print(sns.__version__)
 
-
 # In[30]:
 
 
