@@ -12,3 +12,4 @@ if sum == num:
 else:
     print(f"{num} is not an Armstrong number")
 
+
