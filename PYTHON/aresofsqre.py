@@ -4,3 +4,4 @@ perimeter=4*side
 print("Area of Square:",area)
 
 print("Perimeter of Square:",perimeter)
+
