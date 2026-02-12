@@ -5,3 +5,4 @@ print("Area of Square:",area)
 
 print("Perimeter of Square:",perimeter)
 
+
