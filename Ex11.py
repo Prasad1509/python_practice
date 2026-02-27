@@ -12,3 +12,4 @@ try:
     book_ticket(age)
 except AgeRestrictionError as e:
     print("Booking failed:", e)
+
