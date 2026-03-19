@@ -4,7 +4,7 @@
 # In[3]:
 def caesar_cipher(text, shift, mode):
    result = []
-   
+    
    if mode == 'decrypt':
        shift = -shift
           
