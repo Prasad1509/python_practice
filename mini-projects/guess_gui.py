@@ -4,7 +4,7 @@ import random
 class GuessingGame:
     def __init__(self, root):
         self.root = root
-        self.root.title("🎯 Guess the Number Game")
+        self.root.title("🎯 Guess the Number Game") 
         self.root.geometry("400x300")
         self.secret_number = random.randint(1, 100)
         self.attempts = 0
