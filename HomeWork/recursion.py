@@ -1,4 +1,4 @@
-def show(n):
+def show(n): 
         if (n==0):
                 return
         print(n)
