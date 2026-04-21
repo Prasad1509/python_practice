@@ -11,7 +11,7 @@ def run_quiz(questions):
         user_answer = input("Your answer (A/B/C/D): ").strip().upper()
 
         if user_answer == q['answer']:
-            print("✅ Correct!\n")
+            print("✅ Correct!\n") 
             score += 1
         else:
             print(f"❌ Wrong! The correct answer is: {q['answer']}\n")
