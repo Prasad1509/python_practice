@@ -6,7 +6,7 @@ import time
 screen = turtle.Screen()
 screen.bgcolor("black")
 screen.title("Colorful Lighting Flower")
-
+ 
 # Create turtle
 pen = turtle.Turtle()
 pen.speed(79)
