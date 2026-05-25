@@ -3,7 +3,7 @@ class DailyLimitExceeded(Exception):
     pass
 
 # Function to withdraw money with daily limit
-def withdraw_from_atm(amount_today, amount_now):
+def withdraw_from_atm(amount_today, amount_now): 
     DAILY_LIMIT = 10000
     if amount_today + amount_now > DAILY_LIMIT:
         raise DailyLimitExceeded("You can't withdraw more than ₹10,000 in a day.")
