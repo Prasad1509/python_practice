@@ -1,7 +1,7 @@
 # Smart Auto Quiz Game in Python
 
 def run_quiz(questions):
-    score = 0
+    score = 0    
     print("\n🎯 Welcome to the Quiz Game!\n")
 
     for i, q in enumerate(questions, start=1):
