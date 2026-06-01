@@ -1,0 +1,152 @@
+🔹 SET A
+1. Output of the given program
+sets = {1, 2, 3, 4, 4}
+print(sets)
+
+Explanation:
+Sets do not allow duplicate values, so 4 appears only once.
+
+Output
+
+{1, 2, 3, 4}
+-----------------------------------------------------
+2. Remove and return an arbitrary element from a set
+s = {10, 20, 30}
+
+if len(s) == 0:
+    raise KeyError("Set is empty")
+else:
+    print("Removed element:", s.pop())
+    print("Set after removal:", s)
+
+Output
+
+Removed element: 10
+Set after removal: {20, 30}
+
+(Note: Removed element may vary)
+------------------------------------------------------
+3. Iterate over a set
+s = {1, 2, 3, 4}
+
+for i in s:
+    print(i)
+
+Output
+1
+2
+3
+4
+-----------------------------------------------------
+4. Add and remove operation on set
+s = {1, 2, 3}
+
+s.add(4)
+print("After add:", s)
+
+s.remove(2)
+print("After remove:", s)
+
+Output
+
+After add: {1, 2, 3, 4}
+After remove: {1, 3, 4}
+-------------------------------------------------------
+🔹 SET B
+1. Accept strings which contain all vowels
+s = input("Enter string: ").lower()
+vowels = {'a', 'e', 'i', 'o', 'u'}
+
+if vowels.issubset(set(s)):
+    print("String contains all vowels")
+else:
+    print("String does not contain all vowels")
+
+Sample Input
+ram
+
+Output
+String contains all vowels
+-----------------------------------------------------------
+2. Union of sets
+A = {1, 2, 3}
+B = {3, 4, 5}
+
+print("Union =", A | B)
+
+Output
+
+Union = {1, 2, 3, 4, 5}
+-----------------------------------------------------------
+3. Intersection of sets
+A = {1, 2, 3}
+B = {2, 3, 4}
+
+print("Intersection =", A & B)
+
+Output
+
+Intersection = {2, 3}
+------------------------------------------------------------
+4. Find maximum and minimum value in a set
+s = {10, 50, 30, 20}
+
+print("Maximum =", max(s))
+print("Minimum =", min(s))
+
+Output
+
+Maximum = 50
+Minimum = 10
+----------------------------------------------------------
+5. Set difference and symmetric difference
+A = {1, 2, 3}
+B = {3, 4, 5}
+
+print("Difference =", A - B)
+print("Symmetric Difference =", A ^ B)
+
+Output
+
+Difference = {1, 2}
+Symmetric Difference = {1, 2, 4, 5}
+-------------------------------------------------------
+6. Find length of a set
+s = {1, 2, 3, 4, 5}
+
+print("Length =", len(s))
+
+Output
+
+Length = 5
+------------------------------------------------
+🔹 SET C
+1. Perform different set operations
+A = {1, 2, 3}
+B = {3, 4, 5}
+
+print("Union:", A | B)
+print("Intersection:", A & B)
+print("Difference:", A - B)
+print("Symmetric Difference:", A ^ B)
+
+Output
+
+Union: {1, 2, 3, 4, 5}
+Intersection: {3}
+Difference: {1, 2}
+Symmetric Difference: {1, 2, 4, 5}
+------------------------------------------------
+2. Create shallow copy of a set
+A = {10, 20, 30}
+
+B = A.copy()
+
+print("Original set:", A)
+print("Shallow copy:", B)
+
+Output
+
+Original set: {10, 20, 30}
+Shallow copy: {10, 20, 30}
+
