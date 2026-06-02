@@ -1,6 +1,6 @@
 import turtle
 import colorsys
-import time
+import time 
 
 # Set up screen
 screen = turtle.Screen()
