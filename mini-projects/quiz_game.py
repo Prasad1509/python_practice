@@ -6,7 +6,7 @@ def run_quiz(questions):
 
     for i, q in enumerate(questions, start=1):
         print(f"Q{i}: {q['question']}")
-        for option in q['options']:
+        for option in q['options']:     
             print(option)
         user_answer = input("Your answer (A/B/C/D): ").strip().upper()
 
