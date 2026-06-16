@@ -6,4 +6,4 @@ try:
     result=num1/num2
     print("Result:",result)
 except (ZeroDivisionError,ValueError):
-    print("Error:Either you enterd invalid input or tried dividing by zero.")
+    print("Error:Either you enterd invalid input or tried dividing by zero.") 
