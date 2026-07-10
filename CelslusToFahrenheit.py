@@ -1,4 +1,4 @@
 celsius=float(input("Enter temperature in Celsius:"))
-#formula
+#formula 
 fahrenheit=(celsius*9/5)+12
 print(f"{celsius} degree celsies is equal to {fahrenheit} degree fahrenheit")                              
